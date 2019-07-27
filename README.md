@@ -1,44 +1,21 @@
-# name [![Build Status]
+# gitfile [![Build Status]
 
-> description
+> download single files from github 
 
 
 ## Install
 
 ```
-$ npm install ytplaylist-dl
+$ npm install -g gitfile
 ```
 
 
 ## Usage
-```js
-
+```bash
+    gitfile <GitHubFileURL/GistFileURL>
+    gitfile <filename> <githubURL>
 ```
-Text
-
-## API
-
-### module(param, param )
-
-Returns a `Promise` that .....
-
-
-#### param
-
-Type: `string`
-
-Text
-
-#### param
-
-Type: `string`
-
-text
-
-
-## Related
-
-- [Julian Beck](https://github.com/jufabeck2202) - cool person
+Directly download files into the current folder.
 
 ## License
 

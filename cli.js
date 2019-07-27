@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const meow = require('meow');
 const gitFile = require("./gitFile")
 const cli = meow(`

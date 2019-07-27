@@ -1,8 +1,8 @@
 {
-  "name": "",
+  "name": "gitfile",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "download single files from github",
+  "main": "cli.js",
   "scripts": {
     "test": "mocha"
   },
@@ -19,12 +19,17 @@
     "mocha": "^5.2.0"
   },
   "files": [
-    "index.js"
+    "cli.js",
+    "gitFile.js"
   ],
-  "keywords": [],
+  "preferGlobal": true,
+  "bin": {
+    "gitfile": "./cli.js"
+  },
+  "keywords": ["download","single git files","download git files"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jufabeck2202"
+    "url": "https://github.com/jufabeck2202/gitfile"
   },
-  "homepage": "https://github.com/jufabeck2202/"
+  "homepage": "https://github.com/jufabeck2202/gitfile"
 }
