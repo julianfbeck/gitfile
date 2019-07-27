@@ -7,7 +7,7 @@
 ## Install
 
 ```
-$ npm install -g git-file
+$ npm install -g gitfile-dl
 ```
 
 
