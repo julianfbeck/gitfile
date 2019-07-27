@@ -1,4 +1,4 @@
-# gitfile [![Build Status](https://travis-ci.com/jufabeck2202/gitfile.svg?token=1Za7rzts3zF37XsfSaDq&branch=master)](https://travis-ci.com/jufabeck2202/gitfile) [![Version](https://img.shields.io/npm/v/gitfile.svg)](https://www.npmjs.com/package/gitfile)
+# gitfile [![Build Status](https://travis-ci.com/jufabeck2202/gitfile.svg?token=1Za7rzts3zF37XsfSaDq&branch=master)](https://travis-ci.com/jufabeck2202/gitfile) [![Version](https://img.shields.io/npm/v/gitfile-dl.svg)](https://www.npmjs.com/package/gitfile-dl)
 
 
 > download single files from github 
