@@ -1,4 +1,4 @@
-# gitfile [![Build Status]
+# gitfile [![Build Status](https://travis-ci.com/jufabeck2202/gitfile.svg?token=1Za7rzts3zF37XsfSaDq&branch=master)](https://travis-ci.com/jufabeck2202/gitfile)
 
 > download single files from github 
 
