@@ -34,14 +34,14 @@ describe('Testing', async () => {
             input:["test1","https://github.com/sindresorhus/meow/blob/master/index.js"]
         }
         await gitFile(cli)
-        expect(fs.existsSync("test1")).to.equal(true)
+        expect(fs.existsSync("./test1")).to.equal(true)
     });
     it('Downloading from Gist with Filename', async () => {
         let cli = {
             input:["test2","https://gist.github.com/jufabeck2202/2e4ebea6439b94a6946b851e4dacd13b"]
         }
         await gitFile(cli)
-        expect(fs.existsSync("test2")).to.equal(true)
+        expect(fs.existsSync("./test2")).to.equal(true)
 
     });
 
