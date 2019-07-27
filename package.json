@@ -1,0 +1,28 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Julian Beck",
+  "license": "MIT",
+  "dependencies": {
+  
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [  
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jufabeck2202"
+  },
+  "homepage": "https://github.com/jufabeck2202/"
+}
