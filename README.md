@@ -18,6 +18,15 @@ $ npm install -g gitfile-dl
 ```
 Directly download files into the current folder.
 
+## Example
+
+```bash
+    gitfile https://github.com/jufabeck2202/gitfile/blob/master/cli.js
+```
+```bash
+    gitfile index.js https://github.com/jufabeck2202/gitfile/blob/master/cli.js
+```
+Save to index.js
 ## License
 
 MIT © [Julian Beck](https://github.com/jufabeck2202)
