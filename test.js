@@ -4,6 +4,16 @@ const gitFile = require("./gitFile")
 const fs = require('fs')
 
 
+
+
+after(function (done) {
+    fs.unlinkSync("test1")
+    fs.unlinkSync("test2")
+    fs.unlinkSync("./index.js")
+    fs.unlinkSync("./discoverLocalWebservices.sh")
+    done()
+});
+
 describe('Testing', async () => {
     it('Downloading from Gitub', async () => {
         let cli = {
@@ -34,8 +44,5 @@ describe('Testing', async () => {
         expect(fs.existsSync("test2")).to.equal(true)
 
     });
-    fs.unlinkSync("test1")
-    fs.unlinkSync("test2")
-    fs.unlinkSync("./index.js")
-    fs.unlinkSync("./discoverLocalWebservices.sh")
+
 });
