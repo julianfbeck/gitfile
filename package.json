@@ -1,6 +1,6 @@
 {
   "name": "gitfile-dl",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "download single files from github",
   "main": "cli.js",
   "scripts": {
