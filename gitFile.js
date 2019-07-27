@@ -49,17 +49,26 @@ module.exports = async (cli) => {
     }
     const file = fs.createWriteStream(fileName)
 
-
-
-    request(downloadURL).pipe(fs.createWriteStream(fileName))
-    .on("close", () => {
-        console.log(chalk.green("Downloaded "+fileName))
-    }).on("error",(error)=>{
-        console.print(error)
-    });
+    await downloadFile(downloadURL,fileName)
 };
 
-function getGistRawURL(inputURL) {
+
+
+async function downloadFile(inputURL,inputName) {
+    return new Promise((resolve, reject) => {
+        request(inputURL).pipe(fs.createWriteStream(inputName))
+            .on("close", () => {
+                console.log(chalk.green("Downloaded " + inputName))
+                resolve()
+            }).on("error", (error) => {
+                console.print(error)
+                reject()
+            });
+
+    });
+}
+
+async function getGistRawURL(inputURL) {
     return new Promise((resolve, reject) => {
         request(inputURL, function (err, resp, html) {
             if (err) {
@@ -71,7 +80,8 @@ function getGistRawURL(inputURL) {
         });
     });
 }
-function getGitRawURL(inputURL) {
+
+async function getGitRawURL(inputURL) {
     return new Promise((resolve, reject) => {
         request(inputURL, function (err, resp, html) {
             if (err) {
